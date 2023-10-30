@@ -18,8 +18,8 @@ Methods and processes to import data.
 Decisions to consider:
 - **2.1. Database Selection**: Should we opt for only a vector database, or both vector and keyword-based databases?
 - **2.2. Vector Database Choice**: Options include Qdrant, Chroma, Meilisearch, and more.
-- **2.3. Document Vectorization**: How should we create vectors for documents? Do we choose single or multiple vectors per document? If multiple, how should a document be split? Should we interleave vectors?
-- **2.4. Vector Embedding Model**: Which model should we use for vector embeddings?
+- **2.3. Document Vectorization**: How should we create vectors for documents? Do we choose single or multiple vectors per document? If multiple, how should a document be split? Should we interleave vectors? Would it be usefule to summarize documents, then index the summary?
+- **2.4. Vector Embedding Model**: Which model should we use for vector embeddings? Is it necessary to finetune the embedding model?
 - **2.5. Vector Types**: Should we use quantized or non-quantized vectors? Do we opt for exact vector searches or approximate methods?
 
 ### 3. Retrieval
@@ -37,8 +37,3 @@ Decisions to consider:
 - **Ready-made Solutions**: Should we use pre-existing tools like privateGPT, or develop from scratch?
 - **Frameworks**: Should we implement with or without tools such as Langchain or Llama index?
 - **Dspy & ColBert Utilization**: How can Dspy and ColBert be integrated into our implementation?
-
-## Similar Projects
-- [DocsGPT](https://github.com/arc53/DocsGPT)
-- [Verba](https://github.com/weaviate/Verba)
-- [privateGPT](https://github.com/imartinez/privateGPT)
